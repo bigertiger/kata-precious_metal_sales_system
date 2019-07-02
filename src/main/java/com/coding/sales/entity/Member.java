@@ -15,7 +15,7 @@ public class Member {
     private BigDecimal amount;
 
 
-    private String memberLevel;
+    private MemberLevel memberLevel;
     private BigDecimal memberPoints;
 
     public String getMemberId() {
@@ -42,11 +42,11 @@ public class Member {
         this.amount = amount;
     }
 
-    public String getMemberLevel() {
+    public MemberLevel getMemberLevel() {
         return memberLevel;
     }
 
-    public void setMemberLevel(String memberLevel) {
+    public void setMemberLevel(MemberLevel memberLevel) {
         this.memberLevel = memberLevel;
     }
 
