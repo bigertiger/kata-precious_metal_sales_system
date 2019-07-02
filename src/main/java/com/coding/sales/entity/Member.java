@@ -13,10 +13,10 @@ public class Member {
     private String memberId;
     private String memberName;
     private BigDecimal amount;
-
-
     private MemberLevel memberLevel;
     private BigDecimal memberPoints;
+    private MemberLevel oldLevel;
+    private BigDecimal addPoint;
 
     public String getMemberId() {
         return memberId;
@@ -57,7 +57,18 @@ public class Member {
     public void setMemberPoints(BigDecimal memberPoints) {
         this.memberPoints = memberPoints;
     }
-
+    public MemberLevel getOldLevel() {
+        return oldLevel;
+    }
+    public void setOldLevel(MemberLevel oldLevel) {
+        this.oldLevel = oldLevel;
+    }
+    public BigDecimal getAddPoint() {
+        return addPoint;
+    }
+    public void setAddPoint(BigDecimal addPoint) {
+        this.addPoint = addPoint;
+    }
 
     @Override
     public String toString() {
