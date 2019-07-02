@@ -33,8 +33,23 @@ public class OrderApp {
     OrderRepresentation checkout(OrderCommand command) {
         OrderRepresentation result = null;
 
+        /*1 解析商品数据
+          2 根据不同的优惠 计算出应付金额
+          3 比较应付金额  选择优惠最大的那个
+         {
+          4 根据实付金额 累积积分(如果累积后客户可以升级 则升级)
+          5 扣款
+          6 组装打印单据类的数据 进行打印
+
+         }
+         */
+
+
+
         //TODO: 请完成需求指定的功能
 
         return result;
     }
+
+
 }
