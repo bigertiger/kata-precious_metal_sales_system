@@ -18,7 +18,24 @@ public class Prod {
     private String[] discounts;
     private String discountType;
     private BigDecimal num;
+    private BigDecimal discountAmount = new BigDecimal(0);
+    private String usedType;
 
+    public String getUsedType() {
+        return usedType;
+    }
+
+    public void setUsedType(String usedType) {
+        this.usedType = usedType;
+    }
+
+    public BigDecimal getDiscountAmount() {
+        return discountAmount;
+    }
+
+    public void setDiscountAmount(BigDecimal discountAmount) {
+        this.discountAmount = discountAmount;
+    }
 
     public String getPrdId() {
         return prdId;
