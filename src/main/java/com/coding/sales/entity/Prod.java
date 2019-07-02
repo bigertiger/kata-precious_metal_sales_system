@@ -15,7 +15,9 @@ public class Prod {
     private String prdName;
     private String prdUnit;
     private BigDecimal prdPrice;
-    private String[] discountType;
+    private String[] discounts;
+    private String discountType;
+    private BigDecimal num;
 
 
     public String getPrdId() {
@@ -50,22 +52,27 @@ public class Prod {
         this.prdPrice = prdPrice;
     }
 
-    public String[] getDiscountType() {
+    public String getDiscountType() {
         return discountType;
     }
 
-    public void setDiscountType(String[] discountType) {
+    public void setDiscountType(String discountType) {
         this.discountType = discountType;
     }
 
-    @Override
-    public String toString() {
-        return "Prod{" +
-                "prdId='" + prdId + '\'' +
-                ", prdName='" + prdName + '\'' +
-                ", prdUnit='" + prdUnit + '\'' +
-                ", prdPrice=" + prdPrice +
-                ", discountType=" + Arrays.toString(discountType) +
-                '}';
+    public String[] getDiscounts() {
+        return discounts;
+    }
+
+    public void setDiscounts(String[] discounts) {
+        this.discounts = discounts;
+    }
+
+    public BigDecimal getNum() {
+        return num;
+    }
+
+    public void setNum(BigDecimal num) {
+        this.num = num;
     }
 }
